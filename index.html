@@ -6,16 +6,41 @@
       *{
         color: #363636
       }
+      
+      p.ex1 {display: none;}
+      p.ex2 {display: inline; border-color: chartreuse;}
+      p.ex3 {display: block; border-color: chartreuse}
+      p.ex4 {display: inline-block; border-color: chartreuse}
 
-
+      #funnycat {
+        max-width: 540px;
+      }
 
       h2 {
         color: hsla(118, 100%, 10%, 0.8);
         margin-left: .4em;
         padding-right: 3px;
       }
+      
+
+
+      .flex-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      background-color:darkgreen;
+    }
+
+    .flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
 
     p.yerba { 
+      position: static;
       margin: 0 0 0 .3em;
       background: hsl(55, 100%, 44%);
     }
@@ -51,6 +76,8 @@
     }
 
     div p {
+      position: relative;
+      right: 35px;
       margin-top: 4px;
       font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
@@ -118,7 +145,7 @@
     </ul>
 	  <details>
   <summary>rip van winkle</summary>
-  <p>John Marston in Red Dead Redemption 2 told the Pinkerton Detective Agency his name was Rip Van Winkle. Rip Van Winkle was a character from a short story written by Washington Irving who slept through the American Revolutionary War.</p>
+  <p>John Marston in Red Dead Redemption 2 told the Pinkerton Detective Agency his name was Rip Van Winkle.  <p class="ex1"> is this invisible because it is display one? we'll see</p>  <p class="ex2">  what's up check out this inline display thing </p>Rip Van Winkle was a character from a short story written by Washington Irving who slept through the American Revolutionary War.</p>
 </details>
 	  
 	  
@@ -153,10 +180,10 @@
     <p> i like this website that archives a lot of old stuff </p>
     <iframe src="https://archive.org/" title="archive.org"></iframe>
     <p> video i like </p>
-    <video width="320" height="240" controls>
+    <video id="funnycat" width="320" height="240" controls>
     <source src="catflip.mp4" type="video/mp4">
     </video>
-    <p> look an empty canvas. does it make ur mind run wild with creativity? </p>
+    <p> look an empty canvas. <p class="ex3">adding a block display here for fun</p> does it make ur mind run wild with creativity? </p>
     <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
     </canvas>
 	  <button type="button">Push the button. It commands you.</button>
@@ -298,6 +325,12 @@
     
     
     
+
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>  
+    </div>
     
   </main>
   
