@@ -19,10 +19,32 @@
       border:2px solid rgb(213,255,189);
     }
 
-    a[RedEyes] {
-      background-color: crimson;
+    a[target] {
+      background-color:pink;
     }
 
+    a:link {
+      color: red;
+    }
+
+    /* visited link */
+    a:visited {
+      color: green;
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: hotpink;
+    }
+
+    /* selected link */
+    a:active {
+      color: blue;
+    }
+
+    div p {
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    }
 
     </style>
 
@@ -52,7 +74,7 @@
       <nav>
         <a href="sorry.txt">sorry</a> |
         <a href="myapologies.txt">my apologies</a> |
-        <a href="imreallysorry.txt">im really sorry</a> |
+        <a href="imreallysorry.txt" target = "iswearimsorry">im really sorry</a> |
       </nav>
       
       <div class="myDiv"> 
